@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "ShowSong";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh Sách Bài Hát</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Têm Bài Hát</th>
+            <th>Ca Sĩ Thể Hiện</th>
+            <th>Lựa Chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Em Của Ngày Hôm Qua</td>
+            <td>Sơn Tùng MTP</td>
+            <td>
+                @Html.ActionLink("Chi Tiết", "DetailsSong", new { SongName = "Em Của Ngày Hôm Qua", AuthorName = "Sơn Tùng MTP" })
+            </td>
+        </tr>
+        <tr>
+            <td>Đám Cưới Nha?</td>
+            <td>Hồng Thanh, DJ Mie</td>
+            <td>
+                @Html.ActionLink("Chi Tiết", "DetailsSong", new { SongName = "Đám Cưới Nha?", AuthorName = "Hồng Thanh, DJ Mie" })
+            </td>
+        </tr>
+        <tr>
+            <td>Rung Động</td>
+            <td>Dương Edward</td>
+            <td>
+                @Html.ActionLink("Chi Tiết", "DetailsSong", new { SongName = "Rung Động", AuthorName = "Dương Edward" })
+            </td>
+        </tr>
+        <tr>
+            <td>Nơi Em Mãi Mãi Là Bình Yên</td>
+            <td>Hồ Quang Hiếu</td>
+            <td>
+                @Html.ActionLink("Chi Tiết", "DetailsSong", new { SongName = "Nơi Em Mãi Mãi Là Bình Yên", AuthorName = "Hồ Quang Hiếu" })
+            </td>
+        </tr>
+        <tr>
+            <td>Mây Hồng Đưa Lối</td>
+            <td>DatKaa</td>
+            <td>
+                @Html.ActionLink("Chi Tiết", "DetailsSong", new { SongName = "Mây Hồng Đưa Lối", AuthorName = "DatKaa" })
+            </td>
+        </tr>
+        <tr>
+            <td>Nhạt Nhoà Mưa Phai</td>
+            <td>Hương Ly, Sơn Vie</td>
+            <td>
+                @Html.ActionLink("Chi Tiết", "DetailsSong", new { SongName = "Nhạt Nhoà Mưa Phai", AuthorName = "Hương Ly, Sơn Vie" })
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "DetailsSong";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông Tin Bài Hát</h2>
+<h3>Bài Hát: @ViewBag.Song - @ViewBag.Author</h3>
+
+<audio src="~/Content/Baihat.mp3" type="audio/mp3" controls></audio>
+ 
+<td>@Html.ActionLink("Tải Về", "DownloadSong", new {  })</td>
